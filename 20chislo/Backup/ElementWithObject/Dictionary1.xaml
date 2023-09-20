@@ -1,0 +1,47 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <FlowDocument x:Key="instruct" FontSize="11" Background="White"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    >
+        <List MarkerStyle="Decimal">
+            <ListItem>
+                <Paragraph>
+                    Первый флажок двунаправленно привязан булевым свойством 
+                    IsChecked к вложенному логическому свойству Selector.IsSelected, 
+                    которое инициализируется один раз и больше не меняется. 
+                    Поэтому флажок и элемент списка меняются независимо.
+                    Режим поиска родителя определен значением Mode=Self - 
+                    искать источник в том же элементе.
+                </Paragraph>
+            </ListItem>
+            <ListItem>
+                <Paragraph>
+                    Второй флажок своим свойством IsChecked привязан двунаправленной 
+                    привязкой к свойству IsSelected своего ближайшего контейнера,
+                    которым является элемент списка ListBoxItem, 
+                    поэтому и меняется синхронно с ним, 
+                    обеспечивая нормальную логику работы списка.
+                    Режим поиска родителя определен значением Mode=FindAncestor - 
+                    искать источник в ближайшем родителе.
+                </Paragraph>
+            </ListItem>
+            <ListItem>
+                <Paragraph>
+                    В третьем элементе списка флажок и элемент списка ListBoxItem 
+                    никак не связаны, поэтому изменяются автономно как в первом элементе, 
+                    где связь хоть и установлена, но источник Selector.IsSelected 
+                    остается постоянным
+                </Paragraph>
+            </ListItem>
+            <ListItem>
+                <Paragraph>
+                    Четвертый элемент списка задается явно и флажок своим свойством 
+                    IsChecked привязан двунаправленной привязкой к свойству 
+                    IsSelected этого контейнера. Поэтому флажок и элемент списка 
+                    работают синхронно, как и в случае со вторым списком.
+                </Paragraph>
+            </ListItem>
+        </List>
+    </FlowDocument>
+</ResourceDictionary>

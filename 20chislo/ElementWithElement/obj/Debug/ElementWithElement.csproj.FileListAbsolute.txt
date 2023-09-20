@@ -1,0 +1,28 @@
+E:\Tmp\DataBinding\ElementWithElement\bin\Debug\ElementWithElement.exe
+E:\Tmp\DataBinding\ElementWithElement\bin\Debug\ElementWithElement.pdb
+E:\Tmp\DataBinding\ElementWithElement\obj\Debug\ResolveAssemblyReference.cache
+E:\Tmp\DataBinding\ElementWithElement\obj\Debug\Window1.baml
+E:\Tmp\DataBinding\ElementWithElement\obj\Debug\App.baml
+E:\Tmp\DataBinding\ElementWithElement\obj\Debug\Window1.g.cs
+E:\Tmp\DataBinding\ElementWithElement\obj\Debug\App.g.cs
+E:\Tmp\DataBinding\ElementWithElement\obj\Debug\ElementWithElement_MarkupCompile.cache
+E:\Tmp\DataBinding\ElementWithElement\obj\Debug\ElementWithElement.g.resources
+E:\Tmp\DataBinding\ElementWithElement\obj\Debug\ElementWithElement.Properties.Resources.resources
+E:\Tmp\DataBinding\ElementWithElement\obj\Debug\ElementWithElement.csproj.GenerateResource.Cache
+E:\Tmp\DataBinding\ElementWithElement\obj\Debug\ElementWithElement.exe
+E:\Tmp\DataBinding\ElementWithElement\obj\Debug\ElementWithElement.pdb
+E:\Chair\Lab\Lab71 - DataBinding = Wpf & C# (VS.NET 2008)\DataBinding\ElementWithElement\obj\Debug\ElementWithElement.exe
+E:\Chair\Lab\Lab71 - DataBinding = Wpf & C# (VS.NET 2008)\DataBinding\ElementWithElement\obj\Debug\ElementWithElement.pdb
+E:\Chair\Lab\Lab71 - DataBinding = Wpf & C# (VS.NET 2008)\DataBinding\ElementWithElement\bin\Debug\ElementWithElement.exe
+E:\Chair\Lab\Lab71 - DataBinding = Wpf & C# (VS.NET 2008)\DataBinding\ElementWithElement\bin\Debug\ElementWithElement.pdb
+E:\Chair\Lab\Lab71 - DataBinding = Wpf & C# (VS.NET 2008)\DataBinding\ElementWithElement\obj\Debug\ResolveAssemblyReference.cache
+E:\Chair\Lab\Lab71 - DataBinding = Wpf & C# (VS.NET 2008)\DataBinding\ElementWithElement\obj\Debug\Window1.baml
+E:\Chair\Lab\Lab71 - DataBinding = Wpf & C# (VS.NET 2008)\DataBinding\ElementWithElement\obj\Debug\App.baml
+E:\Chair\Lab\Lab71 - DataBinding = Wpf & C# (VS.NET 2008)\DataBinding\ElementWithElement\obj\Debug\Window1.g.cs
+E:\Chair\Lab\Lab71 - DataBinding = Wpf & C# (VS.NET 2008)\DataBinding\ElementWithElement\obj\Debug\App.g.cs
+E:\Chair\Lab\Lab71 - DataBinding = Wpf & C# (VS.NET 2008)\DataBinding\ElementWithElement\obj\Debug\ElementWithElement_MarkupCompile.cache
+E:\Chair\Lab\Lab71 - DataBinding = Wpf & C# (VS.NET 2008)\DataBinding\ElementWithElement\obj\Debug\ElementWithElement.g.resources
+E:\Chair\Lab\Lab71 - DataBinding = Wpf & C# (VS.NET 2008)\DataBinding\ElementWithElement\obj\Debug\ElementWithElement.Properties.Resources.resources
+E:\Chair\Lab\Lab71 - DataBinding = Wpf & C# (VS.NET 2008)\DataBinding\ElementWithElement\obj\Debug\ElementWithElement.csproj.GenerateResource.Cache
+C:\Users\Vlad\Desktop\20\DataBinding\ElementWithElement\obj\Debug\ElementWithElement.exe
+C:\Users\Vlad\Desktop\20\DataBinding\ElementWithElement\obj\Debug\ElementWithElement.pdb

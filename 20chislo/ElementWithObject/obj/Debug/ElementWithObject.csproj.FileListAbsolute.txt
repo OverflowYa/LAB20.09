@@ -1,0 +1,38 @@
+E:\Tmp\DataBinding\ElementWithObject\obj\Debug\ResolveAssemblyReference.cache
+E:\Tmp\DataBinding\ElementWithObject\obj\Debug\Window1.baml
+E:\Tmp\DataBinding\ElementWithObject\obj\Debug\Window1.g.cs
+E:\Tmp\DataBinding\ElementWithObject\obj\Debug\App.g.cs
+E:\Tmp\DataBinding\ElementWithObject\obj\Debug\ElementWithObject_MarkupCompile.cache
+E:\Tmp\DataBinding\ElementWithObject\obj\Debug\ElementWithObject.g.resources
+E:\Tmp\DataBinding\ElementWithObject\obj\Debug\ElementWithObject.Properties.Resources.resources
+E:\Tmp\DataBinding\ElementWithObject\obj\Debug\ElementWithObject.csproj.GenerateResource.Cache
+E:\Tmp\DataBinding\ElementWithObject\bin\Debug\ElementWithObject.exe
+E:\Tmp\DataBinding\ElementWithObject\bin\Debug\ElementWithObject.pdb
+E:\Tmp\DataBinding\ElementWithObject\obj\Debug\ElementWithObject.exe
+E:\Tmp\DataBinding\ElementWithObject\obj\Debug\ElementWithObject.pdb
+E:\Tmp\DataBinding\ElementWithObject\obj\Debug\ElementWithObject_MarkupCompile.lref
+E:\Tmp\DataBinding\ElementWithObject\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\Tmp\DataBinding\ElementWithObject\bin\Debug\Images\flower2.jpg
+E:\Tmp\DataBinding\ElementWithObject\bin\Debug\Images\wood.jpg
+E:\Tmp\DataBinding\ElementWithObject\bin\Debug\Instruct.xaml
+E:\Tmp\DataBinding\ElementWithObject\obj\Debug\Dictionary1.baml
+E:\Chair\Lab\Lab71 - DataBinding = Wpf & C# (VS.NET 2008)\DataBinding\ElementWithObject\bin\Debug\Instruct.xaml
+E:\Chair\Lab\Lab71 - DataBinding = Wpf & C# (VS.NET 2008)\DataBinding\ElementWithObject\bin\Debug\Images\flower2.jpg
+E:\Chair\Lab\Lab71 - DataBinding = Wpf & C# (VS.NET 2008)\DataBinding\ElementWithObject\bin\Debug\Images\wood.jpg
+E:\Chair\Lab\Lab71 - DataBinding = Wpf & C# (VS.NET 2008)\DataBinding\ElementWithObject\bin\Debug\ElementWithObject.exe
+E:\Chair\Lab\Lab71 - DataBinding = Wpf & C# (VS.NET 2008)\DataBinding\ElementWithObject\bin\Debug\ElementWithObject.pdb
+E:\Chair\Lab\Lab71 - DataBinding = Wpf & C# (VS.NET 2008)\DataBinding\ElementWithObject\obj\Debug\ResolveAssemblyReference.cache
+E:\Chair\Lab\Lab71 - DataBinding = Wpf & C# (VS.NET 2008)\DataBinding\ElementWithObject\obj\Debug\Dictionary1.baml
+E:\Chair\Lab\Lab71 - DataBinding = Wpf & C# (VS.NET 2008)\DataBinding\ElementWithObject\obj\Debug\Window1.g.cs
+E:\Chair\Lab\Lab71 - DataBinding = Wpf & C# (VS.NET 2008)\DataBinding\ElementWithObject\obj\Debug\App.g.cs
+E:\Chair\Lab\Lab71 - DataBinding = Wpf & C# (VS.NET 2008)\DataBinding\ElementWithObject\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\Chair\Lab\Lab71 - DataBinding = Wpf & C# (VS.NET 2008)\DataBinding\ElementWithObject\obj\Debug\ElementWithObject_MarkupCompile.cache
+E:\Chair\Lab\Lab71 - DataBinding = Wpf & C# (VS.NET 2008)\DataBinding\ElementWithObject\obj\Debug\ElementWithObject_MarkupCompile.lref
+E:\Chair\Lab\Lab71 - DataBinding = Wpf & C# (VS.NET 2008)\DataBinding\ElementWithObject\obj\Debug\Window1.baml
+E:\Chair\Lab\Lab71 - DataBinding = Wpf & C# (VS.NET 2008)\DataBinding\ElementWithObject\obj\Debug\ElementWithObject.g.resources
+E:\Chair\Lab\Lab71 - DataBinding = Wpf & C# (VS.NET 2008)\DataBinding\ElementWithObject\obj\Debug\ElementWithObject.Properties.Resources.resources
+E:\Chair\Lab\Lab71 - DataBinding = Wpf & C# (VS.NET 2008)\DataBinding\ElementWithObject\obj\Debug\ElementWithObject.csproj.GenerateResource.Cache
+E:\Chair\Lab\Lab71 - DataBinding = Wpf & C# (VS.NET 2008)\DataBinding\ElementWithObject\obj\Debug\ElementWithObject.exe
+E:\Chair\Lab\Lab71 - DataBinding = Wpf & C# (VS.NET 2008)\DataBinding\ElementWithObject\obj\Debug\ElementWithObject.pdb
+C:\Users\Vlad\Desktop\20\DataBinding\ElementWithObject\obj\Debug\ElementWithObject.exe
+C:\Users\Vlad\Desktop\20\DataBinding\ElementWithObject\obj\Debug\ElementWithObject.pdb

@@ -1,0 +1,398 @@
+﻿<Window x:Class="ElementWithObject.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="300" 
+    Width="300"
+    Title="Привязка элемента к объекту" 
+    MinHeight="300" 
+    MinWidth="300"
+    WindowStartupLocation="CenterScreen"
+        
+    xmlns:local="clr-namespace:ElementWithObject"                 
+    >   
+    <Window.Resources>
+        <SolidColorBrush x:Key="ControlColorBrush" 
+            Color="{x:Static SystemColors.ControlColor}" />
+        <local:Pictures x:Key="wood" />
+    </Window.Resources>
+    <Grid Background="{StaticResource ResourceKey=ControlColorBrush}">
+        <TabControl>
+            <!-- Page1. Использование логического ресурса без привязки -->
+            <TabItem Header="Page1">
+                <TabItem.Resources>
+                    <ImageBrush x:Key="flower1"
+                        ImageSource="Images/flower1.jpg"
+                        Stretch="UniformToFill"
+                        Opacity="1"
+                        />
+                </TabItem.Resources>
+                <Rectangle 
+                    Stroke="Red"
+                    StrokeThickness="5.0" 
+                    Opacity="1"
+                    Fill="{StaticResource flower1}" />
+            </TabItem>
+    
+            <!-- Page2. Связывание целевого элемента с исходным
+                        объектом через логический ресурс -->
+            <TabItem Header="Page2">
+                <TabItem.Resources>
+                    <TextBlock x:Key="title2"
+                        FontSize="16"
+                        TextAlignment="Center"
+                        FontWeight="Bold">
+                        <TextBlock.Foreground>
+                            <SolidColorBrush Color="Yellow" />
+                        </TextBlock.Foreground>
+                        Связывание целевого элемента
+                        <LineBreak />
+                        с исходным объектом
+                        <LineBreak />
+                        через логический ресурс
+                    </TextBlock>
+                    <local:Pictures x:Key="flower2"/>
+                </TabItem.Resources>
+                <Button 
+                    Content="{StaticResource ResourceKey=title2}"
+                    Background="{Binding Source={StaticResource flower2},
+                                         Path=Picture, Mode=OneWay}" />
+            </TabItem>
+    
+            <!-- Page3. Использование свойства DataContext -->
+            <TabItem Header="Page3">
+                <StackPanel>
+                    <!-- Источник привязки -->
+                    <ScrollBar Name="scroll3"
+                        Orientation="Horizontal" Margin="24"
+                        Maximum="100" LargeChange="10" SmallChange="1"
+                        Value="50"
+                    />
+    
+                    <!-- Приемник привязки -->
+                    <Label HorizontalAlignment="Center"
+                        ContentStringFormat="F0"
+                        DataContext="{Binding ElementName=scroll3}"
+                        Content="{Binding Path=Value}"
+                    />
+                </StackPanel>
+            </TabItem>
+    
+            <!-- Page4. Использование свойства DataContext -->
+            <TabItem Header="Page4">
+                <StackPanel DataContext="{Binding ElementName=scroll4}">
+                    <!-- Источник привязки -->
+                    <ScrollBar Name="scroll4"
+                        Orientation="Horizontal" Margin="24"
+                        Maximum="100" LargeChange="10" SmallChange="1"
+                        Value="50"
+                    />
+    
+                    <!-- Приемник привязки -->
+                    <Label HorizontalAlignment="Center"
+                        ContentStringFormat="F0"
+                        Content="{Binding Path=Value}"
+                    />
+                </StackPanel>
+            </TabItem>
+                
+            <!-- Page5. Разметка без свойства DataContext -->
+            <TabItem Header="Page5">
+                <StackPanel>
+                    <TextBlock 
+                        FontSize="18" FontWeight="Bold"
+                        Text="{Binding Source={x:Static SystemFonts.IconFontFamily},
+                        Path=Source}" 
+                    />
+                    <TextBlock 
+                        FontSize="18" FontWeight="Bold"
+                        Text="{Binding Source={x:Static SystemFonts.IconFontFamily},
+                        Path=LineSpacing}" 
+                    />
+                    <TextBlock 
+                        FontSize="18" FontWeight="Bold"
+                        Text="{Binding Source={x:Static SystemFonts.IconFontFamily},
+                        Path=FamilyTypefaces[0].Style}" 
+                    />
+                    <TextBlock 
+                        FontSize="18" FontWeight="Bold"
+                        Text="{Binding Source={x:Static SystemFonts.IconFontFamily},
+                        Path=FamilyTypefaces[0].Weight}" 
+                    />
+                    <TextBlock 
+                        FontSize="18" FontWeight="Bold"
+                        Text="{Binding Source={x:Static SystemFonts.IconFontFamily},
+                        Path=FamilyNames.Count}" 
+                    />
+                    <TextBlock 
+                        FontSize="18" FontWeight="Bold"
+                        Text="{Binding Source={x:Static SystemFonts.IconFontFamily},
+                        Path=FamilyMaps.Count}"
+                    />
+                    <TextBlock 
+                        FontSize="18" FontWeight="Bold"
+                        Text="{Binding Source={x:Static SystemFonts.IconFontFamily},
+                        Path=Baseline}"  
+                    />
+                </StackPanel>
+            </TabItem>
+            
+            <!-- Page6. Разметка с использованием свойства DataContext -->
+            <TabItem Header="Page6">
+                <StackPanel
+                    DataContext="{Binding Source={x:Static SystemFonts.IconFontFamily}}"
+                    >
+                    <TextBlock 
+                        FontSize="18" FontWeight="Bold"
+                        Text="{Binding Path=Source}" 
+                    />
+                    <TextBlock 
+                        FontSize="18" FontWeight="Bold"
+                        Text="{Binding Path=LineSpacing}" 
+                    />
+                    <TextBlock 
+                        FontSize="18" FontWeight="Bold"
+                        Text="{Binding Path=FamilyTypefaces[0].Style}" 
+                    />
+                    <TextBlock 
+                        FontSize="18" FontWeight="Bold"
+                        Text="{Binding Path=FamilyTypefaces[0].Weight}" 
+                    />
+                    <TextBlock 
+                        FontSize="18" FontWeight="Bold"
+                        Text="{Binding Path=FamilyNames.Count}" 
+                    />
+                    <TextBlock 
+                        FontSize="18" FontWeight="Bold"
+                        Text="{Binding Path=FamilyMaps.Count}"
+                    />
+                    <TextBlock 
+                        FontSize="18" FontWeight="Bold"
+                        Text="{Binding Path=Baseline}"  
+                    />
+                </StackPanel>
+            </TabItem>
+
+            <!-- Page7. Присвоение свойству DataContext 
+                        логической ссылки на ресурс -->
+            <TabItem Header="Page7"
+                DataContext="{StaticResource ResourceKey=wood}"
+                >
+                <Button 
+                    Background="{Binding Path=Picture1, Mode=OneWay}" />
+            </TabItem>
+
+            <!-- Page8. Управление свойством DataContext в процедурном коде -->
+            <TabItem Header="Page8">
+                <StackPanel Name="stackPanel8">
+                    <TextBlock FontSize="16" TextDecorations="Underline"
+                        TextAlignment="Center" Margin="0,5,0,15" Foreground="Red"
+                        Text="Управление DataContext в коде" 
+                        />
+                    <StackPanel Orientation="Horizontal" Margin="5">
+                        <Label Width="40"
+                            Content="{Binding Path=Value, Mode=OneWay}" 
+                            />
+                        <Slider Name="slider8" Width="230" 
+                            Minimum="11" Maximum="54"
+                            TickFrequency="2" TickPlacement="BottomRight"
+                            IsSnapToTickEnabled="True"
+                            />
+                    </StackPanel>
+                    <Button 
+                        Margin="5"
+                        Content="Подключить источник в DataContext"
+                        Click="button8_Click">
+                    </Button>
+                    <TextBlock Margin="0,10" 
+                        Foreground="Blue"
+                        FontSize="{Binding Path=Value, Mode=OneWay}"
+                        Text="Simple Text"
+                        />
+                </StackPanel>
+            </TabItem>
+            
+            <!-- Привязка пользовательского элемента управления -->
+            <TabItem Header="Page9">
+                <StackPanel>
+                    <ScrollBar Orientation="Horizontal"
+                        Margin="24"
+                        Maximum="100"
+                        LargeChange="10"
+                        SmallChange="1"
+                        Value="{Binding ElementName=simple9, Path=Number,
+                                        Mode=OneWayToSource}" />
+                    <local:SimpleElement x:Name="simple9"
+                        HorizontalAlignment="Center" />
+                    <ScrollBar Name="scroll9"
+                        Orientation="Horizontal"
+                        Margin="24"
+                        Maximum="100"
+                        LargeChange="10"
+                        SmallChange="1"
+                        Value="{Binding ElementName=simple9, Path=Number,
+                                        Mode=TwoWay}" />
+                    <local:SimpleElement
+                        HorizontalAlignment="Center"
+                        Number="{Binding ElementName=scroll9, Path=Value,
+                                         Mode=OneWay}" />
+                </StackPanel>
+            </TabItem>
+
+            <!-- Относительная привязка RelativeSource к источнику -->
+            <TabItem Header="Page10">
+                <StackPanel>
+                    <Grid Tag="Привязка к Grid по синтаксису элементов свойств">
+                        <Button Margin="5" FontSize="10">
+                            <Button.Content>
+                                <Binding Path="Tag" Mode="OneWay">
+                                    <Binding.RelativeSource>
+                                        <RelativeSource Mode="FindAncestor" 
+                                                        AncestorType="Grid"
+                                                        AncestorLevel="1" />
+                                    </Binding.RelativeSource>
+                                </Binding>
+                            </Button.Content>
+                        </Button>
+                    </Grid>
+                    <Grid Tag="Привязка к Grid по синтаксису расширения разметки">
+                        <Button Margin="5" FontSize="10"
+                            Content="{Binding Path=Tag,
+                                              RelativeSource={RelativeSource 
+                                                  Mode=FindAncestor,
+                                                  AncestorType=Grid, 
+                                                  AncestorLevel=1},
+                                              Mode=OneWay}" />
+                    </Grid>
+                    <!-- Привязка к свойству заголовка окна 
+                         по синтаксису элементов свойств -->
+                    <TextBlock TextAlignment="Center">
+                        <TextBlock.Text>
+                            <Binding Path="Title" Mode="OneWay">
+                                <Binding.RelativeSource>
+                                    <RelativeSource Mode="FindAncestor"
+                                                    AncestorType="Window" />
+                                </Binding.RelativeSource>
+                            </Binding>
+                        </TextBlock.Text>
+                    </TextBlock>
+                    <Label HorizontalAlignment="Center">
+                        <Label.Content>
+                            <Binding Path="Title" Mode="OneWay">
+                                <Binding.RelativeSource>
+                                    <RelativeSource Mode="FindAncestor"
+                                                    AncestorType="{x:Type Window}">
+                                    </RelativeSource>
+                                </Binding.RelativeSource>
+                            </Binding>
+                        </Label.Content>
+                    </Label>
+                    <!-- Привязка к свойству заголовка окна 
+                         по синтаксису расширения разметки -->
+                    <TextBlock TextAlignment="Center"
+                               Text="{Binding Path=Title, 
+                                              RelativeSource=
+                                                  {RelativeSource FindAncestor, 
+                                                      AncestorType={x:Type Window}},
+                                              Mode=OneWay}" />
+                    <Label HorizontalAlignment="Center"
+                           Content="{Binding Path=Title, 
+                                             RelativeSource= 
+                                                  {RelativeSource Mode=FindAncestor, 
+                                                      AncestorType=Window},
+                                             Mode=OneWay}" />
+                </StackPanel>
+            </TabItem>
+            
+            <!-- Относительная привязка RelativeSource -->
+            <TabItem Header="Page11" Selector.IsSelected="True">
+                <DockPanel LastChildFill="True">
+                    <StackPanel DockPanel.Dock="Top">
+                        <TextBlock FontSize="16"
+                            TextAlignment="Center" Margin="0,5,0,5">
+                            <TextBlock.Foreground>
+                                <SolidColorBrush Color="Purple" />
+                            </TextBlock.Foreground>
+                            Привязка с помощью RelativeSource
+                        </TextBlock>
+                        <ListBox Foreground="Red" SelectionMode="Multiple" Height="60">
+                            <CheckBox Selector.IsSelected="False"
+                                IsChecked="{Binding RelativeSource={RelativeSource Mode=Self}, 
+                                                    Path=(Selector.IsSelected), Mode=TwoWay}"
+                                Foreground="{Binding Path=Foreground,
+                                                     RelativeSource=
+                                                         {RelativeSource Mode=FindAncestor,
+                                                             AncestorType=ListBox},
+                                                     Mode=OneWay}">
+                                1) Это еще флажок, элемент списка правее
+                            </CheckBox>
+                            <CheckBox ListBox.IsSelected="False" 
+                                IsChecked="{Binding RelativeSource={RelativeSource 
+                                                        Mode=FindAncestor, 
+                                                        AncestorLevel=1,
+                                                        AncestorType={x:Type ListBoxItem}}, 
+                                                    Path=IsSelected, Mode=TwoWay}"
+                                Foreground="{Binding Path=Foreground,
+                                                    RelativeSource=
+                                                        {RelativeSource Mode=FindAncestor,
+                                                            AncestorType=ListBox},
+                                                    Mode=OneWay}">
+                                2) Это еще флажок, элемент списка правее
+                            </CheckBox>
+                            <CheckBox 
+                                Foreground="{Binding Path=Foreground,
+                                                     RelativeSource=
+                                                         {RelativeSource FindAncestor,
+                                                             AncestorType=ListBox},
+                                                     Mode=OneWay}">
+                                3) Это еще флажок, элемент списка правее
+                            </CheckBox>
+                            <ListBoxItem IsSelected="False">
+                                <CheckBox 
+                                    IsChecked="{Binding RelativeSource={RelativeSource 
+                                                            AncestorType={x:Type ListBoxItem}}, 
+                                                        Path=IsSelected, Mode=TwoWay}"
+                                    Foreground="{Binding Path=Foreground,
+                                                         RelativeSource=
+                                                             {RelativeSource FindAncestor,
+                                                                 AncestorType=ListBox},
+                                                         Mode=OneWay}">
+                                    4) Это еще флажок, элемент списка правее
+                                </CheckBox>
+                            </ListBoxItem>
+                        </ListBox>
+                    </StackPanel>
+                    <RichTextBox Name="documentReader"
+                                 Margin="0,5,0,0"
+                                 ScrollViewer.VerticalScrollBarVisibility="Auto">
+                        <RichTextBox.Resources>
+                            <ResourceDictionary>
+                                <ResourceDictionary.MergedDictionaries>
+                                    <ResourceDictionary Source="Dictionary1.xaml" />
+                                </ResourceDictionary.MergedDictionaries>
+                            </ResourceDictionary>
+                        </RichTextBox.Resources>
+                        <RichTextBox.Document>
+                            <StaticResource ResourceKey="instruct" />                        
+                        </RichTextBox.Document>
+                    </RichTextBox>
+                </DockPanel>
+            </TabItem>
+
+            <!-- Привязка RelativeSource в коде -->
+            <TabItem Header="Page12">
+                <!-- Привязка Button.Content к StackPanel уровней 1 и 2 -->
+                <StackPanel Tag="Эта информация находится в StackPanel уровня 2">
+                    <StackPanel Tag="Эта информация находится в StackPanel уровня 1">
+                        <Button Margin="5" Name="button12level1" />
+                        <Button Margin="5" Name="button12level2" />
+                    </StackPanel>
+                    <!-- Привязка TextBlock.Text к Window.Title -->
+                    <Label>
+                        Следующая информация находится в Window:
+                    </Label>
+                    <TextBlock Margin="5,0" Name="textBlock12" />
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
